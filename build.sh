@@ -25,42 +25,42 @@ bldwht=${txtbld}$(tput setaf 7) # Bold White
 clear
         echo -e "${bldred}                                                                  "
         echo -e "${bldred}   ---------------------------------------------------------------"
-        echo -e "${bldred}   |    ${bldnormal}Compilación del código de FuchsiaOS${bldred}| "
+        echo -e "${bldred}   |    ${bldnormal}Compilation of the code FuchsiaOS${bldred}|   "
         echo -e "${bldred}   |                                                            | "
-        echo -e "${bldred}   |    ${bldnormal}Configurando Código...             ${bldred}| "
+        echo -e "${bldred}   |    ${bldnormal}Configuring Code...                ${bldred}| "
         echo -e "${bldred}   ---------------------------------------------------------------"
 clear
         echo -e "${bldcya}  ---------------------------------------------------------------"
-        echo -e "${bldcya}                Accediendo a la carpeta FuchsiaOS...             "
+        echo -e "${bldcya}                Accessing the folder FuchsiaOS...                "
         echo -e "${bldcya}  ---------------------------------------------------------------"
 cd fuchsia
 tput setaf 2
 
 # FuchsiaOS ARCH selection
   echo "============================================================"
-  echo " Elige tu Arquitectura....."
+  echo " Choose your Architecture....."
   echo "============================================================"
   echo 
-  echo "  1 - x86-64"
-  echo "  2 - x86-64 (Ultima Estable)"
+  echo "  1 - x64"
+  echo "  2 - x64 (Release)"
   echo "  3 - ARM64"
   echo
-  echo -n "Ingrese una opción: "
+  echo -n "Enter an option: "
   read opt
 
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) fx set x86-64;;
-      2) fx set x86-64 --release;;
+      1) fx set x64;;
+      2) fx set x64 --release;;
       3) fx set arm64;;
     esac
   fi
 clear
 # Build FuchsiaOS
 echo -e "${bldgrn} --------------------------------------------------------------------------"
-echo -e "${bldgrn}                         Compilando FuchsiaOS...                           "
-echo -e "${bldgrn}       Por favor espere a que Build Ninja termine de compilar el OS...     "
+echo -e "${bldgrn}                         Compiling FuchsiaOS...                           "
+echo -e "${bldgrn}       Please wait for Build Ninja to finish compiling the OS...          "
 echo -e "${bldgrn} --------------------------------------------------------------------------"
 time fx full-build
 

@@ -21,11 +21,11 @@ clear
 
         echo -e "${bldred}                                 "
         echo -e "${bldred}   ----------------------------- "
-        echo -e "${bldred}   |    ${bldnormal}Autoinstalacion de librerias     ${bldred}| "
+        echo -e "${bldred}   |    ${bldnormal}Self-installation of libraries     ${bldred}| "
         echo -e "${bldred}   |                           | "
-        echo -e "${bldred}   | ${bldnormal}Descargando el codigo ${bldred}| "
+        echo -e "${bldred}   | ${bldnormal}Downloading the code ${bldred}| "
         echo -e "${bldred}   |                           | "
-        echo -e "${bldred}   |   ${bldnormal}Configurando su computadora  ${bldred}| "
+        echo -e "${bldred}   |   ${bldnormal}Configuring your computer  ${bldred}| "
         echo -e "${bldred}   ----------------------------  "
 
 tput setaf 3
@@ -58,7 +58,7 @@ tput setaf 2
 	echo  
 tput setaf 3
 	echo  
-	echo -e "${bldcya}Para continuar la descarga de codigo ejecute: ${bldred}./source.sh "
+	echo -e "${bldcya}To continue the code download run: ${bldred}./source.sh "
 	echo  
 	sleep 5
 tput setaf 2

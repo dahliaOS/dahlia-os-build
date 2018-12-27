@@ -26,17 +26,17 @@ clear
 
         echo -e "${bldred}                                 "
         echo -e "${bldred}   ----------------------------- "
-        echo -e "${bldred}   |    ${bldnormal}Instalacion de codigo fuente     ${bldred}| "
+        echo -e "${bldred}   |    ${bldnormal}Installation of source code     ${bldred}| "
         echo -e "${bldred}   |                           | "
-        echo -e "${bldred}   | ${bldnormal}Descargando el codigo ${bldred}| "
+        echo -e "${bldred}   | ${bldnormal}Downloading the code ${bldred}| "
         echo -e "${bldred}   |                           | "
-        echo -e "${bldred}   |   ${bldnormal}Configurando la computadora  ${bldred}| "
+        echo -e "${bldred}   |   ${bldnormal}Configuring the computer  ${bldred}| "
         echo -e "${bldred}   ----------------------------  "
 	
   # Initial git config
-	echo "Ingrese email de Github: "
+	echo "Enter Github email: "
 	read input_email
-	echo "Ingrese nombre de Github (Nombre cualquiera): "
+	echo "Enter your Github username(usually full name): "
 	read input_user
 	git config --global user.email "$input_email"
 	git config --global user.name "$input_user"
@@ -44,7 +44,7 @@ clear
 
   # Source version selection
   echo "============================================================"
-  echo " Elige tu versión....."
+  echo " Choose your version....."
   echo "============================================================"
   echo 
   echo "  1 - Zircon"
@@ -52,7 +52,7 @@ clear
   echo "  3 - Peridot"
   echo "  4 - Topaz"
   echo
-  echo -n "Ingrese una opción: "
+  echo -n "Enter an option: "
   read opt
 
   if [ "$?" != "1" ]
@@ -68,13 +68,13 @@ clear
 
   # Finaly Sinc repo of FuchsiaOS
 	echo  
-	echo -e "${bldcya}El codigo ha sido descargado en 'pwd'/fuchsia"
-	echo -e "${bldcya}Tu podras compilar en la ubicacion 'pwd'/fuchsia"
+	echo -e "${bldcya}The code has been downloaded in 'pwd'/fuchsia"
+	echo -e "${bldcya}You can compile in the locatio 'pwd'/fuchsia"
         echo -e "${bldorange}   -------------------------------------------------- "
-        echo -e "${bldorange}   | ${txtund}Ahora puedes acceder al siguiente script| "
+        echo -e "${bldorange}   | ${txtund}Now you can access the following script | "
         echo -e "${bldorange}   |                                                  | "
-        echo -e "${bldorange}   |        ${txtund}para compilar FuchsiaOS.         | "
+        echo -e "${bldorange}   |         ${txtund}to compile FuchsiaOS.           | "
         echo -e "${bldorange}   |                                                  | "
-        echo -e "${bldorange}   |       ${txtund}Happy Code with FuchsiaOS!        | "
+        echo -e "${bldorange}   |     ${txtund}Happy Coding with FuchsiaOS!        | "
         echo -e "${bldorange}   -------------------------------------------------- "
 exit

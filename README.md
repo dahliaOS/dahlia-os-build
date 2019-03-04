@@ -1,4 +1,4 @@
-# FuchsiaOS Script Repo
+# Dahlia OS Script Repo
 
 this repo is to download and build the source of Fuchsia OS in a simpler way
 

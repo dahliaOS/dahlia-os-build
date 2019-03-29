@@ -2,5 +2,13 @@
 
 this repo is to download and build the source of Dahlia OS in a simpler way
 
+A combined script is on the way to make things easier.
+
+1. [setup.sh](https://github.com/dahlia-os/dahlia-os-build/blob/master/setup.sh)
+
+2. [source.sh](https://github.com/dahlia-os/dahlia-os-build/blob/master/source.sh)
+
+3. [build.sh](https://github.com/dahlia-os/dahlia-os-build/blob/master/build.sh)
+
 Copyright (C) 2018 - @ROM-PacMe
 (Copyright is for the Manifest only)

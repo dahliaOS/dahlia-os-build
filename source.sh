@@ -51,6 +51,7 @@ clear
   echo "  2 - Garnet"
   echo "  3 - Peridot"
   echo "  4 - Topaz"
+  echo "  5 - Fuchsia (Full)
   echo
   echo -n "Enter an option: "
   read opt
@@ -58,10 +59,11 @@ clear
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) time curl -s "https://fuchsia.googlesource.com/scripts/+/master/bootstrap?format=TEXT" | base64 --decode | bash -s zircon;;
-      2) time curl -s "https://fuchsia.googlesource.com/scripts/+/master/bootstrap?format=TEXT" | base64 --decode | bash -s garnet;;
-      3) time curl -s "https://fuchsia.googlesource.com/scripts/+/master/bootstrap?format=TEXT" | base64 --decode | bash -s peridot;;
-      4) time curl -s "https://fuchsia.googlesource.com/scripts/+/master/bootstrap?format=TEXT" | base64 --decode | bash -s topaz;;
+      1) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s zircon;;
+      2) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s garnet;;
+      3) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s peridot;;
+      4) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s topaz;;
+      5) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash;;
       
     esac
   fi

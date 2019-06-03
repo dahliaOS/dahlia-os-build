@@ -44,6 +44,7 @@ tput setaf 2
   echo "  1 - x64"
   echo "  2 - x64 (Release)"
   echo "  3 - ARM64"
+  echo "  4 - x64 workstation"
   echo
   echo -n "Enter an option: "
   read opt
@@ -51,9 +52,10 @@ tput setaf 2
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) fx set x64;;
-      2) fx set x64 --release;;
-      3) fx set arm64;;
+      1) fx set core.64;;
+      2) fx set core.x64 --release;;
+      3) fx set core.arm64;;
+      4) fx set workstation.64
     esac
   fi
 clear
@@ -62,5 +64,5 @@ echo -e "${bldgrn} -------------------------------------------------------------
 echo -e "${bldgrn}                         Compiling FuchsiaOS...                           "
 echo -e "${bldgrn}       Please wait for Build Ninja to finish compiling the OS...          "
 echo -e "${bldgrn} --------------------------------------------------------------------------"
-time fx full-build
+time fx build
 

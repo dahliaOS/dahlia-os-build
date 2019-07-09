@@ -35,14 +35,14 @@ tput setaf 3
 	echo  
 	sleep 3
 tput setaf 2
-	time sudo apt-get update
+	time sudo apt update
 tput setaf 3
 	echo  
 	echo Installing required packages ...
 	echo  
 	sleep 3
 tput setaf 2
-	time sudo apt-get -y install texinfo libglib2.0-dev liblz4-tool autoconf libtool libsdl-dev build-essential golang git build-essential curl unzip
+	time sudo apt -y install texinfo libglib2.0-dev liblz4-tool autoconf libtool libsdl-dev build-essential golang git build-essential curl unzip
 tput setaf 3
 	echo  
 	echo Installing and configuring ccache

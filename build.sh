@@ -55,7 +55,7 @@ tput setaf 2
       1) fx set core.64;;
       2) fx set core.x64 --release;;
       3) fx set core.arm64;;
-      4) fx set workstation.64
+      4) fx set workstation.x64
     esac
   fi
 clear

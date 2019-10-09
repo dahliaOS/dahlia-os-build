@@ -3,7 +3,7 @@
 builds the dahlia operating system
 
 
-## To BUILD:
+## To Build
 
 1. Start.sh - downloads required linux packages.
 

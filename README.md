@@ -1,3 +1,3 @@
 # dahlia-os-build
-builds fuchsia os without effort
+builds dahlia os without effort
 

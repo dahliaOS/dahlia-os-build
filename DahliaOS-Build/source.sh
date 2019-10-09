@@ -73,8 +73,8 @@ clear
         echo -e "${bldorange}   -------------------------------------------------- "
         echo -e "${bldorange}   | ${txtund}Now you can access the following script | "
         echo -e "${bldorange}   |                                                  | "
-        echo -e "${bldorange}   |         ${txtund}to compile FuchsiaOS.           | "
+        echo -e "${bldorange}   |         ${txtund}to compile DahliaOS.            | "
         echo -e "${bldorange}   |                                                  | "
-        echo -e "${bldorange}   |     ${txtund}Happy Coding with FuchsiaOS!        | "
+        echo -e "${bldorange}   |     ${txtund}Happy Coding with DahliaOS!         | "
         echo -e "${bldorange}   -------------------------------------------------- "
 exit

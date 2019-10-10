@@ -2,6 +2,8 @@
 
 builds the dahlia operating system
 
+source.sh currently is broken, please refrain from using until a propper build system for dahlia is built. If you would like to build fuchisa please use the scripts found in the FuchsiaOS-Build folder.
+
 
 ## To Build
 

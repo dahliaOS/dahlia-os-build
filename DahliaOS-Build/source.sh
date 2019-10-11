@@ -58,7 +58,7 @@ clear
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) time curl -s "https://github.com/dahlia-os/zircon.git" | base64 --decode | bash -s zircon;;
+      1) time curl -s "https://github.com/dahlia-os/zircon.git"
       2) time curl -s "https://github.com/dahlia-os/garnet.git" | base64 --decode | bash -s garnet;;
       3) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s peridot;;
       4) time curl -s "https://github.com/dahlia-os/topaz.git" | base64 --decode | bash -s topaz;;

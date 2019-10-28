@@ -8,4 +8,13 @@ builds dahlia os without effort
    system before installing a full version of dahlia.
 
 - the dahlia build scripts can be found in the DahliaOS-Build directory
-   #### the scripts are not currently functional. the latest commit broke them, please remain patient while we sort this out.
+   #####latest commit fixed build scripts. now builds fuchsia. future commits work on dapting to handle edits to repos
+   
+## this isn't dahlia! Wheres the ui?
+
+- dahlia's ui can be found at the folowing links:
+  http://github.com/dahlia-os/pangolin-desktop
+  http://github.com/dahlia-os/pangolin-mobile
+  
+- if you would like to help with this project create a pull request! you can also email us to be added to the org!
+   

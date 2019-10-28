@@ -58,10 +58,10 @@ clear
   if [ "$?" != "1" ]
   then
     case $opt in
-      1) time curl -s "https://github.com/dahlia-os/zircon.git"
-      2) time curl -s "https://github.com/dahlia-os/garnet.git" | base64 --decode | bash -s garnet;;
+      1) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s zircon;;
+      2) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s garnet;;
       3) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s peridot;;
-      4) time curl -s "https://github.com/dahlia-os/topaz.git" | base64 --decode | bash -s topaz;;
+      4) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash -s topaz;;
       5) time curl -s "https://fuchsia.googlesource.com/fuchsia/+/master/scripts/bootstrap?format=TEXT" | base64 --decode | bash;;
       
     esac
@@ -73,8 +73,8 @@ clear
         echo -e "${bldorange}   -------------------------------------------------- "
         echo -e "${bldorange}   | ${txtund}Now you can access the following script | "
         echo -e "${bldorange}   |                                                  | "
-        echo -e "${bldorange}   |         ${txtund}to compile DahliaOS.            | "
+        echo -e "${bldorange}   |         ${txtund}to compile FuchsiaOS.           | "
         echo -e "${bldorange}   |                                                  | "
-        echo -e "${bldorange}   |     ${txtund}Happy Coding with DahliaOS!         | "
+        echo -e "${bldorange}   |     ${txtund}Happy Coding with FuchsiaOS!        | "
         echo -e "${bldorange}   -------------------------------------------------- "
 exit

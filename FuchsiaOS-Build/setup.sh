@@ -1,4 +1,11 @@
 #!/bin/bash
+
+# Define Fn and set os variable for repo refresh and dependency install
+findOS(){
+	cat /etc/os-release | sed -n 4p
+}
+os=$(findOS)
+
 # Specify colors utilized in the terminal
 normal='tput sgr0'              # White
 red='tput setaf 1'              # Red
@@ -34,15 +41,34 @@ tput setaf 3
 	echo Updating package list ...
 	echo  
 	sleep 3
+
 tput setaf 2
+if [ "$os" = 'ID_LIKE="opensuse suse"' ]
+then
+	time sudo zypper refresh
+
+elif [ "$os" = 'ID_LIKE="rhel fedora"' ]
+then
+	time $(sudo dnf check-update --refresh)
+
+else
 	time sudo apt update
+fi
 tput setaf 3
 	echo  
 	echo Installing required packages ...
 	echo  
 	sleep 3
 tput setaf 2
-	time sudo apt -y install texinfo libglib2.0-dev liblz4-tool autoconf libtool libsdl-dev build-essential golang git build-essential curl unzip
+if  [ "$os" = 'ID_LIKE="opensuse suse"' ] ; then
+	time sudo zypper -n install -t pattern devel_C_C++;
+	time sudo zypper install texinfo glib2-devel autoconf libtool libsdl-dev build-essential go git curl unzip python-xml  
+elif  [ "$os" = 'ID_LIKE="rhel fedora"' ] ; then
+	time sudo dnf group install "C Development Tools and Libraries"; 
+	time sudo dnf install texinfo glib2-devel autoconf libtool SDL2_image-devel go git curl unzip python-xmltramp
+else
+	        time sudo apt -y install texinfo libglib2.0-dev liblz4-tool autoconf libtool libsdl-dev build-essential golang git build-essential curl unzip
+fi
 tput setaf 3
 	echo  
 	echo Installing and configuring ccache

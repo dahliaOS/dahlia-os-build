@@ -51,7 +51,7 @@ clear
   echo "  2 - Garnet"
   echo "  3 - Peridot"
   echo "  4 - Topaz"
-  echo "  5 - Fuchsia (Full)
+  echo "  5 - Fuchsia (Full)"
   echo
   echo -n "Enter an option: "
   read opt

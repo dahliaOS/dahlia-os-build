@@ -7,7 +7,7 @@
 
 # dahliaOS / Fuchsia OS build
 ![GitHub issues](https://img.shields.io/github/issues/dahlia-os/dahlia-os-build?color=brightgreen)
-![GitHub](https://img.shields.io/github/license/dahlia-os/dahlia-os-build?color=brightgreen)
+![GitHub](https://img.shields.io/github/license/dahlia-os/dahlia-os-build?color=bright-green)
 
  - **Builds dahliaOS and Fuchsia OS without effort**
 

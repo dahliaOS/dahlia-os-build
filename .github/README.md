@@ -1,13 +1,13 @@
 <p align="center">
 <a href="https://dahliaos.io">Website</a> ●
 <a href="https://discord.gg/7qVbJHR">Discord</a> ●
-<a href="https://github.com/dahlia-os/releases/releases">Releases</a> ●
+<a href="https://github.com/dahliaos/releases/releases">Releases</a> ●
 <a href="https://paypal.me/officialdahliaos">Donate</a> ●
-<a href="https://github.com/dahlia-os/documentation">Documentation</a>
+<a href="https://github.com/dahliaos/documentation">Documentation</a>
 
 # dahliaOS / Fuchsia OS build
-![GitHub issues](https://img.shields.io/github/issues/dahlia-os/dahlia-os-build?color=brightgreen)
-![GitHub](https://img.shields.io/github/license/dahlia-os/dahlia-os-build?color=bright-green)
+![GitHub issues](https://img.shields.io/github/issues/dahliaos/dahliaos-build?color=brightgreen)
+![GitHub](https://img.shields.io/github/license/dahliaos/dahlia-os-build?color=bright-green)
 
  - **Builds dahliaOS and Fuchsia OS without effort**
 
@@ -19,7 +19,7 @@
 
 ## This isn't dahliaOS! Where is the UI?
 
-- dahliaOS' UI, Pangolin, can be found [here](http://github.com/dahlia-os/pangolin-desktop)!
+- dahliaOS' UI, Pangolin, can be found [here](http://github.com/dahliaos/pangolin-desktop)!
 
 ## Contribute
 
@@ -28,7 +28,7 @@ If you're wondering how to contribute to the project, please refer to [CONTRIBUT
 ## License
 
 <p align="left">
-  <img width="40%" src="https://github.com/dahlia-os/brand/blob/master/Logo%20PNGs/dahliaOS%20logo%20with%20text%20(drop%20shadow).png"
+  <img width="40%" src="https://github.com/dahliaos/brand/blob/master/Logo%20PNGs/dahliaOS%20logo%20with%20text%20(drop%20shadow).png"
 </p>
 
 Copyright @ 2019-2020 The dahliaOS Authors contact@dahliaos.io

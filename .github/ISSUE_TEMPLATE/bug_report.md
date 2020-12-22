@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve the desktop
+about: Create a report to help us improve the building process
 title: ''
 labels: ''
 assignees: ''
@@ -11,7 +11,7 @@ assignees: ''
 A clear and concise description of what the bug is.
 
 **What kind of a bug is it?**
-Describe what kind of a bug it is. [e.g. Typo, visual, application bug, OS bug]
+Describe what kind of a bug it is.
 
 **To Reproduce**
 Steps to reproduce the behavior:

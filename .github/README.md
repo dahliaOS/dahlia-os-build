@@ -6,7 +6,7 @@
 <a href="https://github.com/dahliaos/documentation">Documentation</a>
 
 # dahliaOS / Fuchsia OS build
-![GitHub issues](https://img.shields.io/github/issues/dahliaos/dahliaos-build?color=brightgreen)
+![GitHub issues](https://img.shields.io/github/issues/dahliaos/dahlia-os-build?color=brightgreen)
 ![GitHub](https://img.shields.io/github/license/dahliaos/dahlia-os-build?color=bright-green)
 
  - **Builds dahliaOS and Fuchsia OS without effort**
